@@ -236,3 +236,15 @@ void SHA1(
     SHA1Final((unsigned char *)hash_out, &ctx);
     hash_out[20] = '\0';
 }
+   /* for(i=0;i<1000;i++)
+        SHA1Update(&ctx, buf, BUFSIZE);
+    SHA1Final(hash, &ctx);
+
+    printf("SHA1=");
+    for(i=0;i<20;i++)
+        printf("%02x", hash[i]);
+    printf("\n");
+    return 0;
+}}
+*/
+
